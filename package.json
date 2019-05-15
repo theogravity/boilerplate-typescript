@@ -68,7 +68,7 @@
     ]
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.ts": [
       "prettier-standard",
       "git add"
     ]
@@ -80,13 +80,13 @@
   ],
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.js"
+      "src/**/*.ts"
     ],
     "testResultsProcessor": "./node_modules/jest-junit-reporter",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/lib"
+      "/build",
+      "/node_modules/"
     ]
   }
 }
