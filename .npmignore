@@ -1,0 +1,4 @@
+src/
+.babelrc
+test-report.xml
+.circleci/

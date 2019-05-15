@@ -1,2 +1,5 @@
-# boilerplate-typescript
-My boilerplate for typescript projects
+# boilerplate
+
+My personal boilerplate for new projects
+
+<!-- TOC -->
