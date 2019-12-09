@@ -2,18 +2,17 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "noImplicitAny": false,
     "strictNullChecks": false,
-    "module": "commonjs",
-    "target": "es2018",
+    "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "build",
     "baseUrl": ".",
     "declaration": true,
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
     ],
     "paths": {
