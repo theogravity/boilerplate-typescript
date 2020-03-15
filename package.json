@@ -24,7 +24,7 @@
     "changelog:verify": "changelog-version verify",
     "changelog:prepare": "changelog-version prepare",
     "changelog:release": "changelog-version release",
-    "lint": "prettier-standard src/**/*.ts && standard src/**/*.ts",
+    "lint": "prettier-standard src/**/*.ts && standardx src/**/*.ts",
     "ts-node-dev": "ts-node-dev"
   },
   "repository": {
@@ -43,8 +43,8 @@
     "@theo.gravity/version-bump": "1.2.6",
     "@types/jest": "25.1.4",
     "@types/node": "^13.9.1",
-    "@typescript-eslint/eslint-plugin": "2.23.0",
-    "@typescript-eslint/parser": "2.23.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
     "eslint": "6.8.0",
     "jest": "25.1.0",
     "jest-cli": "25.1.0",
@@ -52,17 +52,14 @@
     "lint-staged": "10.0.8",
     "pre-commit": "1.2.2",
     "prettier-standard": "16.2.1",
-    "standard": "14.3.2",
+    "standardx": "^5.0.0",
     "toc-md-alt": "^0.3.2",
     "ts-jest": "25.2.1",
     "ts-node": "8.6.2",
     "ts-node-dev": "1.0.0-pre.44",
     "typescript": "3.8.3"
   },
-  "standard": {
-    "ignore": [
-      "build/"
-    ],
+  "standardx": {
     "parser": "@typescript-eslint/parser",
     "plugins": [
       "@typescript-eslint/eslint-plugin"
