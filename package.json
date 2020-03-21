@@ -12,6 +12,7 @@
     "debug": "ts-node-dev --inspect -- src/index.ts",
     "debug:break": "ts-node-dev --inspect-brk -- src/index.ts",
     "test": "jest",
+    "test:ci": "jest --ci --coverage",
     "test:debug": "node --inspect-brk node_modules/.bin/jest",
     "test:watch": "jest --watch",
     "test:coverage:watch": "jest --coverage --watch",
@@ -73,7 +74,7 @@
   },
   "pre-commit": [
     "lint-staged",
-    "test",
+    "test:ci",
     "build"
   ]
 }
