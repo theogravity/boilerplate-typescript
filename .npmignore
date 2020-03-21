@@ -11,3 +11,7 @@ __mocks__/
 .version-bump.js
 tsconfig.json
 .changelog.js
+.prettierrc
+jest.config.js
+CONTRIBUTING.md
+test-report.xml
