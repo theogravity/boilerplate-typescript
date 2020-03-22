@@ -7,8 +7,9 @@
   "types": "build/index.d.ts",
   "scripts": {
     "build": "npm run build:clean && npm run compile",
-    "compile": "tsc",
+    "build:docs": "typedoc --options typedoc.js --plugin typedoc-plugin-markdown src/ --out docs",
     "build:clean": "rm -rf build/*",
+    "compile": "tsc",
     "debug": "ts-node-dev --inspect -- src/index.ts",
     "debug:break": "ts-node-dev --inspect-brk -- src/index.ts",
     "test": "jest",
@@ -43,7 +44,7 @@
     "@theo.gravity/changelog-version": "2.1.10",
     "@theo.gravity/version-bump": "1.2.6",
     "@types/jest": "25.1.4",
-    "@types/node": "^13.9.2",
+    "@types/node": "^13.9.3",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "6.8.0",
@@ -56,8 +57,10 @@
     "standardx": "^5.0.0",
     "toc-md-alt": "^0.3.2",
     "ts-jest": "25.2.1",
-    "ts-node": "8.7.0",
+    "ts-node": "8.8.1",
     "ts-node-dev": "1.0.0-pre.44",
+    "typedoc": "^0.17.3",
+    "typedoc-plugin-markdown": "^2.2.17",
     "typescript": "3.8.3"
   },
   "standardx": {
@@ -73,6 +76,7 @@
     ]
   },
   "pre-commit": [
+    "toc",
     "lint-staged",
     "test:ci",
     "build"

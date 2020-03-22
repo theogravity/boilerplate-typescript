@@ -15,3 +15,6 @@ tsconfig.json
 jest.config.js
 CONTRIBUTING.md
 test-report.xml
+coverage/
+api-doc.md
+docs/
