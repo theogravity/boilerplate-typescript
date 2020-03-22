@@ -18,3 +18,4 @@ test-report.xml
 coverage/
 api-doc.md
 docs/
+typedoc.js
