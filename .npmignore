@@ -3,7 +3,7 @@ src/
 test-report.xml
 .circleci/
 .idea/
-.wallaby.js
+wallaby.js
 __tests__/
 __mocks__/
 .gitattributes
