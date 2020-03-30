@@ -63,11 +63,26 @@
     "typedoc-plugin-markdown": "^2.2.17",
     "typescript": "3.8.3"
   },
-  "standardx": {
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true
+      }
+    },
     "parser": "@typescript-eslint/parser",
     "plugins": [
       "@typescript-eslint/eslint-plugin"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": [
+        2,
+        {
+          "args": "none"
+        }
+      ]
+    }
   },
   "lint-staged": {
     "src/**/*.ts": [
