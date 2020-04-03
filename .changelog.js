@@ -13,6 +13,7 @@ module.exports = {
   },
   // ==== Options specific to prepare ====
   newUnreleasedText: `# UNRELEASED
+
 ## {{subject}}
 
 {{body}}`,

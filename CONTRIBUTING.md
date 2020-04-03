@@ -16,7 +16,6 @@ This is my commit body
 Then the changelog will be stamped in the following fashion on merge:
 
 ```text
-
 # <version> - <date>
 
 ## <git subject>
