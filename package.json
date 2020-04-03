@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-typescript",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal boilerplate for new projects using typescript",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -25,7 +25,7 @@
     "changelog:help": "changelog-version",
     "changelog:verify": "changelog-version verify",
     "changelog:prepare": "changelog-version prepare",
-    "changelog:stamp": "git-commit-stamper CHANGELOG.md",
+    "changelog:stamp": "git-commit-stamper parse CHANGELOG.md",
     "changelog:release": "changelog-version release",
     "lint": "prettier-standard src/**/*.ts && standardx src/**/*.ts",
     "ts-node-dev": "ts-node-dev"
