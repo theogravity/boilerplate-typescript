@@ -13,7 +13,9 @@ module.exports = {
   },
   // ==== Options specific to prepare ====
   newUnreleasedText: `# UNRELEASED
-## {{subject}}{{summary}}`,
+## {{subject}}
+
+{{body}}`,
   unreleasedTag: () => {
     return 'UNRELEASED'
   },
